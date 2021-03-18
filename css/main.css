@@ -147,28 +147,32 @@ html {
 body {
     font-family: 'Roboto';
     font-style: normal;
-    line-height: 28,13px;
+    line-height: 28, 13px;
     font-weight: 400;
     color: #000000;
 }
 
 h1 {
     font-size: 72px;
-    line-height: 84,38px;
+    line-height: 84, 38px;
+    margin-bottom: 281px;
 }
 
-h2{
+h2 {
     font-weight: 300;
-    font-size: 64px;  
+    font-size: 64px;
     line-height: 75px;
+    text-align: center;
 }
 
-h3,button{
-    font-size: 36px; 
-    line-height: 42,19px; 
+h3,
+button {
+    font-size: 36px;
+    line-height: 42, 19px;
+    text-align: center;
 }
 
-button{
+button {
     font-weight: 300;
     border-radius: 44px;
     background: #FFFFFF;
@@ -176,7 +180,8 @@ button{
     padding: 23px 59px 23px 56px;
 }
 
-p,li {
+p,
+li {
     font-size: 24px;
 }
 
@@ -187,7 +192,449 @@ li {
 a {
     text-decoration: none;
 }
+
+
+
 /** Сетка макета */
+header {
+    background: #666464;
+    padding-top: 32px;
+    padding-bottom: 87px;
+}
+
+.first-screen {
+    background-image: url(/images/stock-horse-main.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    padding-top: 120px;
+    padding-bottom: 200px;
+
+}
+
+.about-us {
+    background-color: #666464;
+    padding-top: 107px;
+    padding-bottom: 102px;
+    margin-bottom: 113px;
+}
+
+.advantages {
+    margin-bottom: 120px;
+}
+
+.services {
+    background-color: #C4C4C4;
+    padding-top: 106px;
+    padding-bottom: 48px;
+    margin-bottom: 107px;
+}
+
+.horses {
+    margin-bottom: 159px;
+}
+
+.rules {
+    background-color: #666464;
+    padding-top: 106px;
+    padding-bottom: 75px;
+    margin-bottom: 105px;
+
+}
+
+.recommendations {
+    margin-bottom: 100px;
+}
+
+.form {
+    background-color: #C4C4C4;
+    padding-top: 101px;
+    padding-bottom: 118px;
+    margin-bottom: 111px;
+}
+
+.contacts {
+    margin-bottom: 60px;
+}
+
+footer {
+    background-color: #666464;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: #FFFFFF;
+    
+}
+
+.content {
+    width: 1126px;
+    margin: 0 auto;
+}
+
+
+
+
+
 /** Компоненты */
+
+/* 1 экран */
+.first-screen {
+    text-align: right;
+}
+
+.logo,
+.main-menu__list,
+.social {
+    float: left;
+}
+
+.main-menu {
+    line-height: 3;
+}
+
+.menu-first {
+    margin-left: 57px;
+}
+
+.menu-about-us {
+    margin-left: 57px;
+}
+
+.menu-services {
+    margin-left: 56px;
+}
+
+.menu-horses {
+    margin-left: 50px;
+}
+
+.menu-rules {
+    margin-left: 48px;
+}
+
+.menu-contacts {
+    margin-left: 50px;
+}
+
+.social {
+    line-height: 6;
+}
+
+.social__instagram {
+    margin-left: 78px;
+}
+
+.social__vk {
+    margin-left: 24px;
+}
+
+.social__contacts {
+    margin-left: 20px;
+}
+
+.main-menu ul {
+    list-style-type: none;
+}
+a{
+    color: #FFFFFF;
+}
+.main-menu__list a:hover{
+    color: #000000;
+    border-bottom: 1px solid #000000;
+}
+
+
+
+
+/* 2 экран */
+.about-us__title {
+    color: #FFFFFF;
+    margin-bottom: 41px;
+}
+
+.about-us__description {
+    color: #FFFFFF;
+}
+
+
+/* 3 экран */
+.advantages-wrapper {
+    float: left;
+    width: 33.33%;
+    height: 340px;
+}
+
+.wrapper-overflow {
+    overflow: hidden;
+}
+
+.pictures-wrapper {
+    height: 170px;
+    position: relative;
+    margin-bottom: 48px;
+
+}
+
+.pictures-wrapper svg {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.advantages-title {
+    margin-bottom: 105px;
+}
+
+.pictures-wrapper svg:hover {
+    transform: scale(1.1); 
+   
+   }
+
+/* 4 экран */
+.services {
+    clear: both;
+}
+
+.services-title {
+    margin-bottom: 105px;
+}
+
+.services-flex{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -125px;
+
+}
+.services-wrapper{
+    flex: 0 0 367px;
+    margin-left: 50px;
+    margin-bottom: 54px;
+    min-height: 665px;
+}
+.services__description{
+    background: #E5E5E5;
+    min-height: 245px;
+    padding: 25px 55px 0 54px;
+    font-weight: 300;
+    text-align: center;
+}
+.services__price{
+    font-style: italic;
+    font-size: 24px;
+    line-height: 28,13px;
+    padding-top: 5px;
+}
+
+
+
+/* 5 экран */
+.horses-title {
+    margin-bottom: 105px;
+}
+.horses-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 54px;
+    grid-row-gap: 30px;
+}
+.horses-picture{
+    margin-bottom: 30px;
+}
+
+
+
+
+/*  6 экран */
+.rules-title {
+    margin-bottom: 74px;
+    color: #FFFFFF;
+}
+
+.rules h3,
+li {
+    color: #FFFFFF;
+}
+
+.rules-overflow {
+    overflow: hidden;
+}
+
+.rules-wrapper {
+    float: left;
+    width: 20%;
+    height: 900px;
+    margin-left: 100px;
+    margin-bottom: 90px;
+}
+
+.rules-pictures {
+    height: 270px;
+    position: relative;
+}
+
+.rules-pictures svg {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.rules-general {
+    clear: both;
+}
+
+.rules-general h3 {
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.h3-wrapper {
+    height: 210px;
+}
+
+.rules-general li {
+    margin-left: 28px;
+    margin-bottom: 40px;
+}
+
+
+
+
+
+/*  7 экран */
+.recommendations-title {
+    text-transform: uppercase;
+    margin-bottom: 80px;
+}
+
+.recommendations-list {
+    color: #000000;
+    margin-bottom: 40px;
+}
+
+
+
+
+/*  8 экран */
+.form {
+    background: C4C4C4;
+}
+
+.form-title {
+    text-transform: uppercase;
+    margin-bottom: 104px;
+}
+
+.form-field {
+    background-color: #666464;
+    padding-top: 89px;
+    padding-bottom: 54px;
+    overflow: hidden;
+}
+.field-first__name,.field-second__phone {
+    background-color: #FFFFFF;
+}
+.field-first{
+  overflow: hidden;
+  float: left;
+  width: 40%;
+  margin-left: 54px;
+}
+.field-first__label {
+   color: #FFFFFF;
+   font-size: 24px;
+   font-weight: 300;
+   margin-left: 170px;
+  margin-bottom: 12px;
+}
+
+.field-second {
+    float: left;
+    width: 40%;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+.button-signUp {
+    clear: both;
+    margin-left: 350px;
+}
+
+
+/*  9 экран */
+.contacts-title{
+    text-transform: uppercase;
+    margin-bottom: 60px;
+}
+.contacts-paragraph__first{
+    margin-bottom: 30px;
+}
+.contacts-paragraph__second{
+    margin-bottom: 130px;
+}
+.contacts-route__first{
+    float:left;
+    width: 40%;
+}
+.contacts-pointer{
+    margin-bottom: 100px;
+}
+.contacts-route__second{
+    float:left;
+    width: 40%;
+    margin-left: 180px;
+}
+.contacts-route{
+    overflow: hidden;
+}
+.contacts-route p{
+    clear: both;
+    margin-bottom: 50px;
+}
+.contacts-route__picture{
+    height: 180px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.contacts-route__picture svg{
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.map{
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+/*  10 экран */
+.footer-picture, .footer-telephone, .footer-social{
+    float: left;
+}
+.content-wrapper{
+    overflow: hidden;
+}
+.footer-telephone{
+    line-height: 6;
+    margin-left: 30px;
+    font-size: 36px;
+    font-weight: 300;
+}
+.footer-social{
+    line-height: 3;
+    margin-left: 50px;
+}
+.footer-social__contacts, .footer-social__instagram{
+    margin-left: 30px;
+} 
+.footer-social__paragraf{
+    text-align: center;
+}
 
 /** Медиа – правила */
