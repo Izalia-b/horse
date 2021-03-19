@@ -136,6 +136,7 @@
 /** Общие стили */
 html {
     box-sizing: border-box;
+    font-size: 1.38vw;
 }
 
 *,
@@ -199,7 +200,7 @@ a {
 header {
     background: #666464;
     padding-top: 32px;
-    padding-bottom: 87px;
+    padding-bottom: 33px;
 }
 
 .first-screen {
@@ -208,7 +209,7 @@ header {
     background-size: 100%;
     padding-top: 120px;
     padding-bottom: 200px;
-
+    text-align: right;
 }
 
 .about-us {
@@ -261,14 +262,13 @@ footer {
     padding-top: 80px;
     padding-bottom: 80px;
     color: #FFFFFF;
-    
+
 }
 
 .content {
-    width: 1126px;
+    width: 1200px;
     margin: 0 auto;
 }
-
 
 
 
@@ -276,74 +276,44 @@ footer {
 /** Компоненты */
 
 /* 1 экран */
-.first-screen {
-    text-align: right;
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.logo,
-.main-menu__list,
-.social {
-    float: left;
+.main-menu-flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 .main-menu {
-    line-height: 3;
-}
+    flex-basis: 821px;
+    margin-left: -50px;
 
-.menu-first {
-    margin-left: 57px;
-}
-
-.menu-about-us {
-    margin-left: 57px;
-}
-
-.menu-services {
-    margin-left: 56px;
-}
-
-.menu-horses {
-    margin-left: 50px;
-}
-
-.menu-rules {
-    margin-left: 48px;
-}
-
-.menu-contacts {
-    margin-left: 50px;
-}
-
-.social {
-    line-height: 6;
-}
-
-.social__instagram {
-    margin-left: 78px;
-}
-
-.social__vk {
-    margin-left: 24px;
-}
-
-.social__contacts {
-    margin-left: 20px;
 }
 
 .main-menu ul {
     list-style-type: none;
 }
-a{
+
+a {
     color: #FFFFFF;
 }
-.main-menu__list a:hover{
+
+.social__vk, .social__contacts{
+    margin-left: 15px;
+}
+
+.main-menu__list a:hover {
     color: #000000;
     border-bottom: 1px solid #000000;
 }
 
-
-
-
+/* .social{
+    margin-right: 61px;
+} */
 /* 2 экран */
 .about-us__title {
     color: #FFFFFF;
@@ -387,9 +357,9 @@ a{
 }
 
 .pictures-wrapper svg:hover {
-    transform: scale(1.1); 
-   
-   }
+    transform: scale(1.1);
+
+}
 
 /* 4 экран */
 .services {
@@ -400,29 +370,32 @@ a{
     margin-bottom: 105px;
 }
 
-.services-flex{
+.services-flex {
     display: flex;
     flex-wrap: wrap;
     margin-left: -125px;
 
 }
-.services-wrapper{
+
+.services-wrapper {
     flex: 0 0 367px;
     margin-left: 50px;
     margin-bottom: 54px;
     min-height: 665px;
 }
-.services__description{
+
+.services__description {
     background: #E5E5E5;
     min-height: 245px;
     padding: 25px 55px 0 54px;
     font-weight: 300;
     text-align: center;
 }
-.services__price{
+
+.services__price {
     font-style: italic;
     font-size: 24px;
-    line-height: 28,13px;
+    line-height: 28, 13px;
     padding-top: 5px;
 }
 
@@ -432,13 +405,15 @@ a{
 .horses-title {
     margin-bottom: 105px;
 }
-.horses-grid{
+
+.horses-grid {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 54px;
     grid-row-gap: 30px;
 }
-.horses-picture{
+
+.horses-picture {
     margin-bottom: 30px;
 }
 
@@ -534,21 +509,25 @@ li {
     padding-bottom: 54px;
     overflow: hidden;
 }
-.field-first__name,.field-second__phone {
+
+.field-first__name,
+.field-second__phone {
     background-color: #FFFFFF;
 }
-.field-first{
-  overflow: hidden;
-  float: left;
-  width: 40%;
-  margin-left: 54px;
+
+.field-first {
+    overflow: hidden;
+    float: left;
+    width: 40%;
+    margin-left: 54px;
 }
+
 .field-first__label {
-   color: #FFFFFF;
-   font-size: 24px;
-   font-weight: 300;
-   margin-left: 170px;
-  margin-bottom: 12px;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: 300;
+    margin-left: 170px;
+    margin-bottom: 12px;
 }
 
 .field-second {
@@ -566,41 +545,50 @@ li {
 
 
 /*  9 экран */
-.contacts-title{
+.contacts-title {
     text-transform: uppercase;
     margin-bottom: 60px;
 }
-.contacts-paragraph__first{
+
+.contacts-paragraph__first {
     margin-bottom: 30px;
 }
-.contacts-paragraph__second{
+
+.contacts-paragraph__second {
     margin-bottom: 130px;
 }
-.contacts-route__first{
-    float:left;
+
+.contacts-route__first {
+    float: left;
     width: 40%;
 }
-.contacts-pointer{
+
+.contacts-pointer {
     margin-bottom: 100px;
 }
-.contacts-route__second{
-    float:left;
+
+.contacts-route__second {
+    float: left;
     width: 40%;
     margin-left: 180px;
 }
-.contacts-route{
+
+.contacts-route {
     overflow: hidden;
 }
-.contacts-route p{
+
+.contacts-route p {
     clear: both;
     margin-bottom: 50px;
 }
-.contacts-route__picture{
+
+.contacts-route__picture {
     height: 180px;
     position: relative;
     margin-bottom: 50px;
 }
-.contacts-route__picture svg{
+
+.contacts-route__picture svg {
     position: absolute;
     margin: auto;
     left: 0;
@@ -608,32 +596,41 @@ li {
     top: 0;
     bottom: 0;
 }
-.map{
+
+.map {
     text-align: left;
     margin-bottom: 50px;
 }
 
 /*  10 экран */
-.footer-picture, .footer-telephone, .footer-social{
+.footer-picture,
+.footer-telephone,
+.footer-social {
     float: left;
 }
-.content-wrapper{
+
+.content-wrapper {
     overflow: hidden;
 }
-.footer-telephone{
+
+.footer-telephone {
     line-height: 6;
     margin-left: 30px;
     font-size: 36px;
     font-weight: 300;
 }
-.footer-social{
+
+.footer-social {
     line-height: 3;
     margin-left: 50px;
 }
-.footer-social__contacts, .footer-social__instagram{
+
+.footer-social__contacts,
+.footer-social__instagram {
     margin-left: 30px;
-} 
-.footer-social__paragraf{
+}
+
+.footer-social__paragraf {
     text-align: center;
 }
 
