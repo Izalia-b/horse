@@ -370,11 +370,10 @@ a {
     margin-bottom: 105px;
 }
 
-.services-flex {
+ .services-flex {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -125px;
-
+    margin-left: -51px;
 }
 
 .services-wrapper {
@@ -409,7 +408,7 @@ a {
 .horses-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 54px;
+    grid-column-gap: 49px;
     grid-row-gap: 30px;
 }
 
@@ -489,8 +488,9 @@ li {
     color: #000000;
     margin-bottom: 40px;
 }
-
-
+.recommendations-wrapper{
+    margin-left: 23px;
+}
 
 
 /*  8 экран */
