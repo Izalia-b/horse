@@ -148,42 +148,42 @@ html {
 body {
     font-family: 'Roboto';
     font-style: normal;
-    line-height: 28, 13px;
+    line-height: 1.4rem;
     font-weight: 400;
     color: #000000;
 }
 
 h1 {
-    font-size: 72px;
-    line-height: 84, 38px;
-    margin-bottom: 281px;
+    font-size: 3.6rem;
+    line-height: 4.2rem;
+    margin-bottom: 14.05rem;
 }
 
 h2 {
     font-weight: 300;
-    font-size: 64px;
-    line-height: 75px;
+    font-size: 3.2rem;
+    line-height: 3.75rem;
     text-align: center;
 }
 
 h3,
 button {
-    font-size: 36px;
-    line-height: 42, 19px;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
     text-align: center;
 }
 
 button {
     font-weight: 300;
-    border-radius: 44px;
+    border-radius: 2.2rem;
     background: #FFFFFF;
     border: 0;
-    padding: 23px 59px 23px 56px;
+    padding: 1.15rem 2.95rem 1.15rem 2.8rem;
 }
 
 p,
 li {
-    font-size: 24px;
+    font-size: 1.2rem;
 }
 
 li {
@@ -199,74 +199,74 @@ a {
 /** Сетка макета */
 header {
     background: #666464;
-    padding-top: 32px;
-    padding-bottom: 33px;
+    padding-top: 1.6rem;
+    padding-bottom: 1.65rem;
 }
 
 .first-screen {
     background-image: url(/images/stock-horse-main.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-    padding-top: 120px;
-    padding-bottom: 200px;
+    padding-top: 6rem;
+    padding-bottom: 10rem;
     text-align: right;
 }
 
 .about-us {
     background-color: #666464;
-    padding-top: 107px;
-    padding-bottom: 102px;
-    margin-bottom: 113px;
+    padding-top: 5.35rem;
+    padding-bottom: 5.1rem;
+    margin-bottom: 5.65rem;
 }
 
 .advantages {
-    margin-bottom: 120px;
+    margin-bottom: 6rem;
 }
 
 .services {
     background-color: #C4C4C4;
-    padding-top: 106px;
-    padding-bottom: 48px;
-    margin-bottom: 107px;
+    padding-top: 5.3rem;
+    padding-bottom: 2.4rem;
+    margin-bottom: 5.35rem;
 }
 
 .horses {
-    margin-bottom: 159px;
+    margin-bottom: 7.95rem;
 }
 
 .rules {
     background-color: #666464;
-    padding-top: 106px;
-    padding-bottom: 75px;
-    margin-bottom: 105px;
+    padding-top: 5.3rem;
+    padding-bottom: 3.75rem;
+    margin-bottom: 5.25rem;
 
 }
 
 .recommendations {
-    margin-bottom: 100px;
+    margin-bottom: 5rem;
 }
 
 .form {
     background-color: #C4C4C4;
-    padding-top: 101px;
-    padding-bottom: 118px;
-    margin-bottom: 111px;
+    padding-top: 5.05rem;
+    padding-bottom: 5.9rem;
+    margin-bottom: 5.55rem;
 }
 
 .contacts {
-    margin-bottom: 60px;
+    margin-bottom: 3rem;
 }
 
 footer {
     background-color: #666464;
-    padding-top: 80px;
-    padding-bottom: 80px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
     color: #FFFFFF;
 
 }
 
 .content {
-    width: 1200px;
+    width: 60rem;
     margin: 0 auto;
 }
 
@@ -283,14 +283,18 @@ footer {
     justify-content: space-between;
 }
 
+ .logo svg{
+    width: 3.7rem;
+    height: 3.25rem;
+}
 .main-menu-flex {
     display: flex;
     justify-content: space-between;
 }
 
 .main-menu {
-    flex-basis: 821px;
-    margin-left: -50px;
+    flex-basis: 41.05rem;
+    margin-left: 2.5rem;
 
 }
 
@@ -303,21 +307,22 @@ a {
 }
 
 .social__vk, .social__contacts{
-    margin-left: 15px;
+    margin-left: 0.75rem;
+}
+.social svg{
+    width: 2rem ;
+    height: 2rem;
 }
 
 .main-menu__list a:hover {
     color: #000000;
-    border-bottom: 1px solid #000000;
+    border-bottom: 0.05rem solid #000000;
 }
 
-/* .social{
-    margin-right: 61px;
-} */
 /* 2 экран */
 .about-us__title {
     color: #FFFFFF;
-    margin-bottom: 41px;
+    margin-bottom: 2.05rem;
 }
 
 .about-us__description {
@@ -329,7 +334,7 @@ a {
 .advantages-wrapper {
     float: left;
     width: 33.33%;
-    height: 340px;
+    height: 17rem;
 }
 
 .wrapper-overflow {
@@ -337,9 +342,9 @@ a {
 }
 
 .pictures-wrapper {
-    height: 170px;
+    height: 8.5rem;
     position: relative;
-    margin-bottom: 48px;
+    margin-bottom: 2.4rem;
 
 }
 
@@ -353,13 +358,40 @@ a {
 }
 
 .advantages-title {
-    margin-bottom: 105px;
+    margin-bottom: 5.25rem;
 }
 
 .pictures-wrapper svg:hover {
     transform: scale(1.1);
 
 }
+.graduate-cap svg{
+    width:9.8rem ;
+    height:7.9rem;
+ }
+ .globe svg{
+    width: 6.6rem ;
+    height:7.9rem;
+ }
+ .heart svg{
+    width: 8.85rem ;
+    height:7.9rem;
+ }
+ 
+ .shield svg{
+    width: 6.5rem ;
+    height: 7.9rem;
+ }
+ 
+ .pig svg{
+    width: 6.5rem ;
+    height: 7.9rem;
+ }
+ 
+ .label svg{
+    width: 6.5rem ;
+    height: 7.9rem;
+ }
 
 /* 4 экран */
 .services {
@@ -367,53 +399,56 @@ a {
 }
 
 .services-title {
-    margin-bottom: 105px;
+    margin-bottom: 5.25rem;
 }
 
  .services-flex {
     display: flex;
     flex-wrap: wrap;
-    margin-left: -51px;
+    margin-left: -2.3rem;
 }
-
+.services-flex img{
+    min-width: 100%;
+}
 .services-wrapper {
-    flex: 0 0 367px;
-    margin-left: 50px;
-    margin-bottom: 54px;
-    min-height: 665px;
+    flex: 0 0 18.35rem;
+    margin-left: 2.4rem;
+    margin-bottom: 2.7rem;
+    min-height: 33.25rem;
 }
 
 .services__description {
     background: #E5E5E5;
-    min-height: 245px;
-    padding: 25px 55px 0 54px;
+    min-height: 12.25rem;
+    padding: 1.25rem 2.75rem 0 2.7rem;
     font-weight: 300;
     text-align: center;
 }
 
 .services__price {
     font-style: italic;
-    font-size: 24px;
-    line-height: 28, 13px;
-    padding-top: 5px;
+    font-size: 1.2rem;
+    line-height:1.4em ;
+    padding-top: 0.25rem ;
 }
 
 
 
 /* 5 экран */
 .horses-title {
-    margin-bottom: 105px;
+    margin-bottom: 5.25rem;
 }
 
 .horses-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 49px;
-    grid-row-gap: 30px;
+    grid-column-gap: 2.45rem;
+    grid-row-gap: 1.5rem;
 }
 
 .horses-picture {
-    margin-bottom: 30px;
+    margin-bottom: 1.5rem;
+    min-width: 100%;
 }
 
 
@@ -421,7 +456,7 @@ a {
 
 /*  6 экран */
 .rules-title {
-    margin-bottom: 74px;
+    margin-bottom: 3.7rem;
     color: #FFFFFF;
 }
 
@@ -437,13 +472,13 @@ li {
 .rules-wrapper {
     float: left;
     width: 20%;
-    height: 900px;
-    margin-left: 100px;
-    margin-bottom: 90px;
+    height: 45rem;
+    margin-left: 5rem;
+    margin-bottom: 4.5rem;
 }
 
 .rules-pictures {
-    height: 270px;
+    height: 13.5rem;
     position: relative;
 }
 
@@ -462,34 +497,47 @@ li {
 
 .rules-general h3 {
     text-align: left;
-    margin-bottom: 40px;
+    margin-bottom: 2rem;
 }
 
 .h3-wrapper {
-    height: 210px;
+    height: 10.5rem;
 }
 
 .rules-general li {
-    margin-left: 28px;
-    margin-bottom: 40px;
+    margin-left: 1.4rem;
+    margin-bottom: 2rem;
+}
+ 
+.first-rules-svg svg{
+    width:12.3rem;
+    height: 10.25rem;
 }
 
+.second-rules-svg svg{
+    width:15rem;
+    height: 16.4rem;
+}
 
+.third-rules-svg svg{
+    width:16rem;
+    height: 10.7rem;
+}
 
 
 
 /*  7 экран */
 .recommendations-title {
     text-transform: uppercase;
-    margin-bottom: 80px;
+    margin-bottom: 4rem;
 }
 
 .recommendations-list {
     color: #000000;
-    margin-bottom: 40px;
+    margin-bottom:2rem;
 }
 .recommendations-wrapper{
-    margin-left: 23px;
+    margin-left: 1.15rem;
 }
 
 
@@ -500,13 +548,13 @@ li {
 
 .form-title {
     text-transform: uppercase;
-    margin-bottom: 104px;
+    margin-bottom: 5.2rem;
 }
 
 .form-field {
     background-color: #666464;
-    padding-top: 89px;
-    padding-bottom: 54px;
+    padding-top: 4.45rem;
+    padding-bottom: 2.7rem;
     overflow: hidden;
 }
 
@@ -519,43 +567,52 @@ li {
     overflow: hidden;
     float: left;
     width: 40%;
-    margin-left: 54px;
+    margin-left: 2.7rem;
 }
 
 .field-first__label {
     color: #FFFFFF;
-    font-size: 24px;
+    font-size: 1.2rem;
     font-weight: 300;
-    margin-left: 170px;
-    margin-bottom: 12px;
+    margin-left: 8.5rem;
+    margin-bottom: 0.6rem;
 }
 
 .field-second {
     float: left;
     width: 40%;
-    margin-left: 50px;
-    margin-bottom: 50px;
+    margin-left: 2.5rem;
+    margin-bottom: 2.5rem;
     overflow: hidden;
 }
 
 .button-signUp {
     clear: both;
-    margin-left: 350px;
+    margin-left: 18.9rem;
+}
+
+.field-first__name svg{
+    width: 3.75rem;
+    height: 3rem;
+}
+.field-second__phone svg{
+    width: 2.95rem;
+    height: 3rem;
 }
 
 
 /*  9 экран */
 .contacts-title {
     text-transform: uppercase;
-    margin-bottom: 60px;
+    margin-bottom: 3rem;
 }
 
 .contacts-paragraph__first {
-    margin-bottom: 30px;
+    margin-bottom: 1.5rem;
 }
 
 .contacts-paragraph__second {
-    margin-bottom: 130px;
+    margin-bottom: 6.5rem;
 }
 
 .contacts-route__first {
@@ -564,13 +621,13 @@ li {
 }
 
 .contacts-pointer {
-    margin-bottom: 100px;
+    margin-bottom: 5rem;
 }
 
 .contacts-route__second {
     float: left;
     width: 40%;
-    margin-left: 180px;
+    margin-left: 9rem;
 }
 
 .contacts-route {
@@ -579,13 +636,13 @@ li {
 
 .contacts-route p {
     clear: both;
-    margin-bottom: 50px;
+    margin-bottom: 2.5rem;
 }
 
 .contacts-route__picture {
-    height: 180px;
+    height: 9rem;
     position: relative;
-    margin-bottom: 50px;
+    margin-bottom: 2.5rem;
 }
 
 .contacts-route__picture svg {
@@ -599,7 +656,20 @@ li {
 
 .map {
     text-align: left;
-    margin-bottom: 50px;
+    margin-bottom: 2.5rem;
+}
+
+.train svg{
+    width: 5.4rem;
+    height: 7.9rem;
+}
+
+.car svg{
+    width: 9.75rem;
+    height: 7.9rem;
+}
+.map-img{
+   min-width: 100%;
 }
 
 /*  10 экран */
@@ -615,23 +685,33 @@ li {
 
 .footer-telephone {
     line-height: 6;
-    margin-left: 30px;
-    font-size: 36px;
+    margin-left: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 300;
 }
 
 .footer-social {
     line-height: 3;
-    margin-left: 50px;
+    margin-left: 6.5rem;
 }
 
 .footer-social__contacts,
 .footer-social__instagram {
-    margin-left: 30px;
+    margin-left: 1.5rem;
 }
 
 .footer-social__paragraf {
     text-align: center;
 }
+.footer-picture{
+    width: 6.9rem;
+    height: 6rem;
+}
+
+.footer-social svg{
+    width: 2rem;
+    height: 2rem;
+}
+
 
 /** Медиа – правила */
