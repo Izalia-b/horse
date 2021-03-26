@@ -408,7 +408,7 @@ a {
     margin-left: -2.3rem;
 }
 .services-flex img{
-    min-width: 100%;
+    width: 100%;
 }
 .services-wrapper {
     flex: 0 0 18.35rem;
@@ -448,7 +448,7 @@ a {
 
 .horses-picture {
     margin-bottom: 1.5rem;
-    min-width: 100%;
+    width: 100%;
 }
 
 
@@ -669,7 +669,7 @@ li {
     height: 7.9rem;
 }
 .map-img{
-   min-width: 100%;
+   width: 100%;
 }
 
 /*  10 экран */
