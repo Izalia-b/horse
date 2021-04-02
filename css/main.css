@@ -280,7 +280,7 @@ footer {
 .header-wrapper {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    
 }
 
  .logo svg{
@@ -294,7 +294,7 @@ footer {
 
 .main-menu {
     flex-basis: 41.05rem;
-    margin-left: 2.5rem;
+    margin-left: 3rem;
 
 }
 
@@ -306,6 +306,9 @@ a {
     color: #FFFFFF;
 }
 
+.social {
+    margin-left: 4.2rem;
+}
 .social__vk, .social__contacts{
     margin-left: 0.75rem;
 }
@@ -472,7 +475,7 @@ li {
 .rules-wrapper {
     float: left;
     width: 20%;
-    height: 45rem;
+    /* height: 45rem; */
     margin-left: 5rem;
     margin-bottom: 4.5rem;
 }

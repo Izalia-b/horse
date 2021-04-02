@@ -12,6 +12,9 @@
         flex-basis: 30.85rem;;
         margin-left: 0.4rem;
     }
+    .social {
+        margin-left: 2rem;
+    }
     h1 {
         margin-bottom: 3.35rem;
     }
@@ -28,9 +31,9 @@
     .first-rules-svg svg,.second-rules-svg svg, .third-rules-svg svg {
         max-width: 100%;
     }
-    .rules-wrapper { 
+    /* .rules-wrapper { 
         height: 53rem;
-    }
+    } */
     
     .button-signUp {
         margin-left: 13.9rem;
@@ -50,5 +53,83 @@
     }
 }
 @media (max-width:530px) {
+    .content {
+        width: 35rem;
+    }
+    .menu-burger span,
+    .menu-burger::before,
+    .menu-burger::after{
+        content: "";
+        width: 100%;
+        left: 0;
+        background-color: #fff;
+        height: 1px;
+        display: block;
+        position: absolute;
+    }
+    .menu-burger{
+        position: relative;
+        width: 2rem;
+        height: 1.4rem;
+        cursor: pointer;
+        margin-left: 1rem;
+    }
+    .menu-burger span{
+        top: 7px;
+    }
+    .menu-burger::before{
+        top: 0;
+    }
+    .menu-burger::after{
+        bottom: 0;
+    }
+    .main-menu{
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        padding: 3rem;
+        background: rgba(0,0,0,.7);
+        z-index: 2;
+    }
+    .main-menu-flex{
+        display: block;
+    }
+    .main-menu-flex li{
+        margin-bottom: 1rem;
+    }
+    .social {
+        margin-left: 20.3rem;
+    }
+    .advantages-wrapper {
+        width: 50%;  
+        margin-bottom: 1.5rem;
+    }
+    .first-screen {
+        padding-top: 3.6rem;
+    } 
+    h1 {
+        margin-bottom: 0.25rem;
+    }
+    .services-flex {
+        justify-content: center;
+        margin-left: 0;
+    }
+    .rules-wrapper {
+        width: 50%;
+        justify-content: center;
+        margin-left: 9rem;
+    }
+    .button-signUp {
+        margin-left: 9.9rem;
+    }
+}
+@media (max-width:420px) {
+    .content {
+        width: 25rem;
+    }
+}
+@media (max-width:320px) {
   
 }
