@@ -706,15 +706,15 @@ li {
 .footer-social__paragraf {
     text-align: center;
 }
-.footer-picture{
-    width: 6.9rem;
-    height: 6rem;
-}
+
 
 .footer-social svg{
     width: 2rem;
     height: 2rem;
 }
-
+.footer-picture {
+    width: 6.9rem;
+    height: 6rem;
+}
 
 /** Медиа – правила */
