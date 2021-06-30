@@ -254,7 +254,8 @@ header {
 }
 
 .contacts {
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
+    background-color: #C4C4C4;
 }
 
 footer {
@@ -322,6 +323,7 @@ a {
     border-bottom: 0.05rem solid #000000;
 }
 
+
 /* 2 экран */
 .about-us__title {
     color: #FFFFFF;
@@ -332,7 +334,115 @@ a {
     color: #FFFFFF;
 }
 
+#send-form, #orderForm{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding-top: 7rem;
+}
 
+/*  Форма */
+#name_gest, #phone_gest {
+    border: 1px solid #FFFFFF;
+    font-size: 1.9rem;
+    padding: 0 1rem ;
+    width: 18rem;
+}
+.formFieldWrapper{
+    padding: 0.5rem;
+}
+.form-title {
+    text-transform: uppercase;
+    margin-bottom: 5.2rem;
+}
+
+.form-field {
+    background-color: #666464;
+    padding-top: 4.45rem;
+    padding-bottom: 2.7rem;
+    overflow: hidden;
+    text-align: justify;
+    
+}
+
+.field-first__name,
+.field-second__phone {
+    background-color: #FFFFFF;
+}
+
+.field-first {
+    overflow: hidden;
+    float: left;
+    width: 40%;
+    margin-left: 2.7rem;
+}
+
+.field-first__label {
+    color: #FFFFFF;
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-left: 8.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.field-second {
+    float: left;
+    width: 40%;
+    margin-left: 2.5rem;
+    overflow: hidden;
+}
+
+.button-signUp , .sendOrderForm{
+    clear: both;
+    margin-left: 18.9rem;
+    margin-top: 1.5rem;
+}
+
+.field-first__name svg{
+    width: 3.75rem;
+    height: 3rem;
+}
+.field-second__phone svg{
+    width: 2.95rem;
+    height: 3rem;
+}
+
+#orderForm div{
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+    top: 9rem;
+
+}
+#close-form, #closeOrderForm{
+    position: absolute;
+    right: 1rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.orderFormTitle{
+    padding-bottom: 2rem;
+}
+.orderFormFields  {
+    background-color: #666464;
+    padding: 1.75rem 3rem;
+    overflow: hidden;
+    text-align: justify;
+    color: #FFFFFF;
+}
+
+.orderFormInput{
+    width: 15rem;
+    font-size: 1.2rem;
+    padding: 6px 0 4px 10px;
+    border: 1px solid #cecece;
+    background: #F6F6f6;
+    border-radius: 8px;
+}
 /* 3 экран */
 .advantages-wrapper {
     float: left;
@@ -419,10 +529,14 @@ a {
     margin-bottom: 2.7rem;
     min-height: 33.25rem;
 }
+.services-wrapper:hover{
+color: darksalmon;
+cursor: pointer;
+}
 
-.services__description {
+#services__description {
     background: #E5E5E5;
-    min-height: 12.25rem;
+    min-height: 14.25rem;
     padding: 1.25rem 2.75rem 0 2.7rem;
     font-weight: 300;
     text-align: center;
@@ -544,64 +658,7 @@ li {
 }
 
 
-/*  8 экран */
-.form {
-    background: C4C4C4;
-}
 
-.form-title {
-    text-transform: uppercase;
-    margin-bottom: 5.2rem;
-}
-
-.form-field {
-    background-color: #666464;
-    padding-top: 4.45rem;
-    padding-bottom: 2.7rem;
-    overflow: hidden;
-}
-
-.field-first__name,
-.field-second__phone {
-    background-color: #FFFFFF;
-}
-
-.field-first {
-    overflow: hidden;
-    float: left;
-    width: 40%;
-    margin-left: 2.7rem;
-}
-
-.field-first__label {
-    color: #FFFFFF;
-    font-size: 1.2rem;
-    font-weight: 300;
-    margin-left: 8.5rem;
-    margin-bottom: 0.6rem;
-}
-
-.field-second {
-    float: left;
-    width: 40%;
-    margin-left: 2.5rem;
-    margin-bottom: 2.5rem;
-    overflow: hidden;
-}
-
-.button-signUp {
-    clear: both;
-    margin-left: 18.9rem;
-}
-
-.field-first__name svg{
-    width: 3.75rem;
-    height: 3rem;
-}
-.field-second__phone svg{
-    width: 2.95rem;
-    height: 3rem;
-}
 
 
 /*  9 экран */
@@ -717,4 +774,16 @@ li {
     height: 6rem;
 }
 
-/** Медиа – правила */
+.owl-nav {
+    position: relative;
+    bottom: 9.7rem;
+}
+.owl-prev {
+    position: absolute;
+    left: -2rem;
+}
+.owl-next  {
+    position: absolute;
+   right:-2rem ; 
+ 
+}
