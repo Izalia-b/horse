@@ -1,7 +1,7 @@
-let button_sendRequest = document.getElementById('button-sendRequest');
-let send_form = document.getElementById('send-form');
-let close_form = document.getElementById('close-form');
-let button_signUp = document.getElementById('button-signUp');
+const button_sendRequest = document.getElementById('button-sendRequest');
+const send_form = document.getElementById('send-form');
+const close_form = document.getElementById('close-form');
+const button_signUp = document.getElementById('button-signUp');
 
 button_sendRequest.onclick = function () {
     send_form.style.display = "block"
@@ -14,8 +14,8 @@ close_form.onclick = function () {
 }
 
 button_signUp.onclick = function () {
-    let name_gest = document.getElementById('name_gest');
-    let phone_gest = document.getElementById('phone_gest');
+    const name_gest = document.getElementById('name_gest');
+    const phone_gest = document.getElementById('phone_gest');
 
     if (name_gest.value) {
         console.log(name_gest.value)

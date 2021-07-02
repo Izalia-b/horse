@@ -1,30 +1,30 @@
- let services = [
-     services1 = {
+const services = [
+     {
          picture: "images/stock-photo-woman-riding-a-horse-in-jumper-ring-625839731 1.jpg",
          title: "Занятие на манеже ",
          price: "400 руб./30 мин."
      },
-     services2 = {
+    {
          picture: "images/stock-photo-woman-riding-a-horse-in-jumper-ring-625864208 1.jpg",
          title: "Занятие на манеже ",
          price: "700 руб./60 мин."
      },
-     services3 = {
+     {
          picture: "images/stock-photo-young-couple-riding-330102227 1.jpg",
          title: "Прогулка на природе (лес/поле)",
          price: "800 руб./60 мин."
      },
-     services4 = {
+      {
          picture: "images/stock-photo-young-couple-with-horse-330138794 2.jpg",
          title: "Аренда лошади на фотосессию ",
          price: "800 руб./60 мин."
      },
-     services5 = {
+     {
          picture: "images/stock-photo-kid-riding-white-horse-during-horseback-lessons-1562469781 1.jpg",
          title: "Катание по кругам ",
          price: "100 руб./(2 круга по манежу или 1 круг по футбольному полю)"
      },
-     services6 = {
+     {
          picture: "images/stock-photo-landscape-70029271 1.jpg",
          title: "Зимние сани по лагерю ",
          price: "1500 руб./(60 мин.)"
@@ -44,22 +44,22 @@
      }
  }
 
- let orderForm = document.getElementById('orderForm');
- let closeOrderForm = document.getElementById('closeOrderForm');
+ const orderForm = document.getElementById('orderForm');
+ const closeOrderForm = document.getElementById('closeOrderForm');
 
  closeOrderForm.onclick = function () {
     orderForm.style.display = "none"
 
 }
 
- for (i = 0; i < services.length; i++) {
+ for ( let i = 0; i < services.length; i++) {
      service.getPicture.bind(services[i])()
      const serviceTitle = service.getTitle.bind(services[i])()
      const servicePrice = service.getPrice.bind(services[i])()
      const servicePicture = service.getPicture.bind(services[i])()
 
-     let servicesWrapper = document.getElementById('services-wrapper-all')
-     let servicesHTML = ` 
+     const servicesWrapper = document.getElementById('services-wrapper-all')
+     const servicesHTML = ` 
          <img src="${servicePicture}">
          <div id="services__description">
              <h3 id="services_1"> ${serviceTitle}</h3>
@@ -67,12 +67,12 @@
          </div>
          `
 
-     let div = document.createElement(`div`)
+         const div = document.createElement(`div`)
      div.classList.add("services-wrapper")
      div.onclick = function () {
          orderForm.style.display = "block"
-         let orderFormServices = document.getElementById('orderFormServices')
-         let orderFormPrice = document.getElementById('orderFormPrice')
+         const orderFormServices = document.getElementById('orderFormServices')
+         const orderFormPrice = document.getElementById('orderFormPrice')
     
          orderFormServices.innerHTML=serviceTitle
          orderFormPrice.innerHTML=servicePrice
@@ -83,11 +83,10 @@
 
  }
 
- let sendOrderForm = document.getElementById('sendOrderForm')
- let orderFormNumberGuests = document.getElementById('orderFormNumberGuests')
- let orderFormTime = document.getElementById('orderFormTime')
- let orderFormPhone = document.getElementById('orderFormPhone')
- let orderFormName = document.getElementById('orderFormName')
+ const orderFormNumberGuests = document.getElementById('orderFormNumberGuests')
+ const orderFormTime = document.getElementById('orderFormTime')
+ const orderFormPhone = document.getElementById('orderFormPhone')
+ const orderFormName = document.getElementById('orderFormName')
  sendOrderForm.onclick = function() {
 
     if (orderFormNumberGuests.value) {
@@ -129,7 +128,7 @@
     }
     
  }
-    
+
 
 
 
